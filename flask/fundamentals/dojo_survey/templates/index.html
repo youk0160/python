@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<form  action="/process" method="post" class="container col-sm-6 bg-dark text-white pt-4 pb-5 px-4 mt-3">
+    <h2 class="text-center mb-4">Dojo Survey</h2>
+    <div class="form-group row">
+        <label for="name" class="col-sm-5 col-form-label">Name</label>
+        <div class="col-sm-7">
+            <input type="text" class="form-control" name="name">
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="dojoLocat" class="col-sm-5 col-form-label">Dojo Location</label>
+        <div class="col-sm-7">
+            <select name="dojoLocat" class="form-control">
+                <option selected>Choose...</option>
+                <option>Online</option>
+                <option>Chicago</option>
+                <option>Seattle</option>
+                <option>Bellevue</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="staticEmail" class="col-sm-5 col-form-label">Favorite Language</label>
+        <div class="col-sm-7">
+            <select name="favLang" class="form-control">
+                <option selected>Choose...</option>
+                <option>Java</option>
+                <option>Python</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="comment" class="col-sm-5 col-form-label">Comment</label>
+        <div class="col-sm-7">
+            <textarea class="form-control" name="comment" rows="3"></textarea>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-secondary btn-sm active float-right">Submit</button>
+</form>

@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="container col-sm-4 bg-dark text-white pt-4 pb-5 px-4 mt-3">
+    <h2 class="mb-3">{{ session['name'] }}</h2>
+    <div class="row">
+        <p class="col-sm-7">Dojo Location</p>
+        <p class="col-sm-5">{{ session['dojo_loc'] }}</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-7">Favorite Language</p>
+        <p class="col-sm-5">{{ session['fav_lang'] }}</p>
+    </div>
+    <div class="row">
+        <p class="col-sm-7">Comment</p>
+        <p class="col-sm-5">{{ session['comment'] }}</p>
+    </div>
+</div>
