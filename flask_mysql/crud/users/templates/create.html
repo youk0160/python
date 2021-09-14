@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<div class="d-flex justify-content-between">
+    <h1>Add a New User</h1>
+    <a href="/">Home</a>
+</div>
+
+<form action="/create" method="post">
+    <div class="form-group">
+        <label for="f_name">First Name</label>
+        <input type="text" name="f_name">
+    </div>
+
+    <div class="form-group">
+        <label for="l_name">Last Name</label>
+        <input type="text" name="l_name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" name="email">
+    </div>
+
+    <input type="submit" value="Create">
+</form>
