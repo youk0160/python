@@ -1,0 +1,26 @@
+<form action="/create/ninja" method="post">
+    <h1>New Ninja</h1>
+    <div class="d-flex">
+        <label for="dojo">name</label>
+        <select name="dojo_id">
+            {%for dojo in all_dojos%}
+            <option value="{{dojo.id}}">{{dojo.name}}</option>
+            {%endfor%}
+        </select>
+    </div>
+    <div class="d-flex">
+        <label for="first_name">first name</label>
+        <input type="text" name="first_name">
+    </div>
+    <div class="d-flex">
+        <label for="last_name">last name</label>
+        <input type="text" name="last_name">
+    </div>
+    <div class="d-flex">
+        <label for="age">age</label>
+        <input type="number" name="age">
+    </div>
+    <input type="submit" value="Create">
+</form>
+
+<a href="/dojos">Home</a>
